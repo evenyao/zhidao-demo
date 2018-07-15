@@ -1,0 +1,468 @@
+/* grid大布局 css */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: arial;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+body {
+  height: 1200px;
+  background-color: #f6f6f6;
+  display: grid;
+  grid: 50px 275px 275px 275px 275px 50px / 1fr 590px 300px 1fr;
+  grid-gap: 10px;
+}
+
+
+header {
+  background: #fff;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid: auto / 1fr 900px 1fr;
+}
+
+.new1 {
+  background: #fff;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+
+.new2 {
+  background: #fff;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+
+.new3 {
+  background: #fff;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+
+.new4 {
+  background: #fff;
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+
+
+aside {
+  background: #fff;
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+
+.adv {
+  background: #fff;
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+
+.aboutme {
+  background: #fff;
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+
+
+
+footer {
+  grid-column: 3 / 4;
+  grid-row: 6 / 7;
+  position: relative;
+  top: -380px;
+}
+
+
+/* header头部 css样式 */
+header .headerbox {
+  grid-column: 2 / 3;
+  height: 50px;
+  line-height: 1;
+  margin-top: 7px;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+}
+
+header a {
+  list-style: none;
+  display: inline-block;
+}
+
+header .logo {
+  vertical-align: middle;
+  font-size: 35px;
+  display: inline-block;
+  color: #74b5ff;
+}
+
+header .navbar-left {
+  display: inline-block;
+}
+
+header .list-left {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header .navbar-left a {
+  color :#8590a8;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+header .navbar-left .goto:hover {
+  color :#184d9d;
+}
+
+header form {
+  display: inline-block;
+}
+
+header input {
+  height: 24px;
+  width: 300px;
+  padding: 0 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+
+header input {
+  height: 28px;
+  width: 300px;
+  padding: 0 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background: #f6f6f6;
+}
+
+header input:focus {
+  outline: none;
+  border: 1px solid #848fa7;
+  background: #ffffff;
+}
+
+header input::placeholder {
+  font-size: 14px;
+  color: #848fa7;
+  font-weight: bold;
+}
+
+header button {
+  color: #f7f7f7;
+  background: #006cea;
+  height: 30px;
+  width: 40px;
+  outline: none;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+header button:hover {
+  background: #5597f9;
+}
+
+header .navbar-right {
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header .navbar-right .iconfont {
+  font-size: 25px;
+  display: inline-block;
+  margin-right: 20px;
+  color :#8590a8;
+  vertical-align: middle;
+}
+
+header .navbar-right a:hover {
+  color :#184d9d;
+}
+
+header .navbar-right img {
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+
+/* div块 css样式 */
+.new {
+  padding: 15px;
+}
+
+.new > p {
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.new h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px
+}
+
+.new .content .imglink {
+  display: inline-block;
+  width: 190px;
+  height: 120px;
+}
+
+
+.content .img {
+  width: 190px;
+  height: 120px;
+  float: left;
+}
+
+.img img {
+  border-radius: 5px;
+  width: 100%;
+  height:100%;
+}
+
+.content .intro {
+  position: relative;
+  left: 10px;
+}
+
+.contetn {
+  margin-bottom: 0;
+}
+
+.new .person {
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.new .person .username {
+  color: #000000;
+  font-weight: bold;
+}
+
+.new .person span {
+  color: #646464;
+  font-size: 12px;
+}
+
+.new .touxiang img{
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.new a {
+  color: grey;
+  text-decoration: none;
+}
+
+.new .say a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.new .say .bar1 a:hover {
+  background: #d9ebff;
+}
+
+.new .say .bar2 a:hover {
+  color: lightgrey;
+}
+
+.new .say .good {
+  color: blue;
+  background: #e5f1ff;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+
+.new .say .bad {
+  color: blue;
+  background: #e5f1ff;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.new .say span {
+  display: inline-block;
+}
+
+.new .say .bar1,
+.bar2 {
+  display: inline-block;
+}
+
+
+.new .say .bar2 {
+  margin-left: 50px;
+}
+
+.new .say .bar2 a {
+  margin-left: 10px;
+}
+
+
+/* aside css样式 */
+aside {
+  margin-bottom: 340px;
+  text-align: center;
+}
+
+aside a {
+  display: inline-block;
+  color: #8590a8;
+  text-decoration: none;
+}
+
+
+aside .iconfont {
+  font-size: 30px;
+}
+
+
+
+aside .icon-live,
+aside .live:hover {
+  color: #ffd40d;
+}
+
+aside .icon-shudian,
+aside .shudian:hover {
+  color: #00e081;
+}
+
+aside .icon-yuanzhuo,
+aside .yuanzhuo:hover {
+  color: #0077ff;
+}
+
+aside .icon-bi,
+aside .bi:hover {
+  color: #0080ef;
+}
+
+aside .icon-fufei,
+aside .fufei:hover {
+  color: #5b68f4;
+}
+
+aside .icon-buttom {
+  display: inline-block;
+  margin-top: 20px;
+  width: 90px;
+  height: 50px;
+}
+
+aside .icon-buttom a {
+  position: relative;
+  top: -40px;
+  padding-top: 40px;
+}
+
+
+aside .hidden {
+  visibility: hidden;
+}
+
+aside .live:hover {
+  color: #ffd40d;
+}
+
+
+
+/* 广告adv栏 css样式 */
+.adv {
+  position: relative;
+  top: -340px;
+}
+
+.adv img {
+  width: 100%;
+  height: 100%;
+}
+
+.adv .close {
+  position: absolute;
+  opacity: 0;
+  left: 260px;
+  color: lightgrey;
+  margin: 7px;
+  font-size: 7px;
+  text-decoration: none;
+}
+
+.adv .close:hover {
+  opacity: 1;
+  transition: all .3s;
+}
+
+
+
+
+
+
+/* 关于我 aboutme css样式 */
+.aboutme {
+  position: relative;
+  top: -340px;
+  margin-bottom: 43px
+}
+
+.aboutme .all-list {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.aboutme a {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: #848fa7;
+}
+
+.aboutme a:hover {
+  background-color: #f6f6f6;
+}
+
+
+
+/* footer css样式 */
+
+
+footer .list a,
+footer .list p {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  color: #848fa7;
+}
+
+footer .list {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+footer .list a:hover {
+  color: #184d9d;
+}
